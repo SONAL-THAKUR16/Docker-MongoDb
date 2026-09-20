@@ -50,18 +50,31 @@ The stored data can then be retrieved using the `/getUsers` API and displayed in
 
 | Purpose | Link / Command |
 |---|---|
-| 🌐 Open Application | `http://localhost:5050` |
-| 📊 View Users API | `http://localhost:5050/getUsers` |
-| 💻 Display Users in Terminal | `curl.exe http://localhost:5050/getUsers` |
-| 🐳 Start with Docker | `docker compose up --build` |
+| 🌐 Open Application | 
+```bash
+http://localhost:5050` |
+```
+| 📊 View Users API | 
+```bash 
+http://localhost:5050/getUsers|
+```
+| 💻 Display Users in Terminal |
+```bash
+curl.exe http://localhost:5050/getUsers
+```
+| 🐳 Start with Docker | 
+```bash
+`docker compose up --build` 
+```
 
 ---
 
 ## 💻 View Data in Terminal
 
 After starting the application, open **PowerShell** and run:
-
-`curl.exe http://localhost:5050/getUsers`
+```bash
+curl.exe http://localhost:5050/getUsers
+```
 
 The terminal will display the user data retrieved from MongoDB.
 
@@ -72,30 +85,35 @@ The terminal will display the user data retrieved from MongoDB.
 ## 🐳 Run the Project with Docker
 
 Run:
-
-`docker compose up --build`
+```bash
+docker compose up --build
+```
 
 Then open:
-
+```bash
 `http://localhost:5050`
+```
 
 ---
 ## 🧪 Example
 
 Suppose a user enters:
-
+```bash
 **Username:** John  
 **Email:** john@gmail.com
+```
 
 After clicking **Create Account**, the data is stored in MongoDB.
 
 To view the stored data in the terminal, run:
-
+```bash
 `curl.exe http://localhost:5050/getUsers`
+```
 
 Example output:
-
+```bash
 `[{"username":"John","email":"john@gmail.com"}]`
+```
 
 This shows how the data submitted through the registration form is stored in MongoDB and retrieved using the `/getUsers` API.
 
