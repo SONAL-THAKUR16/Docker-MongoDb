@@ -16,7 +16,7 @@ The stored data can then be retrieved using the `/getUsers` API and displayed in
 
 ### 🔄 Project Flow
 ```bash
-**Registration Form → Express.js → MongoDB → `/getUsers` API → Terminal / Browser**
+Registration Form → Express.js → MongoDB → `/getUsers` API → Terminal / Browser
 ```
 ---
 
@@ -78,7 +78,7 @@ docker compose up --build
 
 Then open:
 ```bash
-`http://localhost:5050`
+`http://localhost:5050
 ```
 
 ---
@@ -94,12 +94,12 @@ After clicking **Create Account**, the data is stored in MongoDB.
 
 To view the stored data in the terminal, run:
 ```bash
-`curl.exe http://localhost:5050/getUsers`
+curl.exe http://localhost:5050/getUsers
 ```
 
 Example output:
 ```bash
-`[{"username":"John","email":"john@gmail.com"}]`
+[{"username":"John","email":"john@gmail.com"}]
 ```
 
 This shows how the data submitted through the registration form is stored in MongoDB and retrieved using the `/getUsers` API.
