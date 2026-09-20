@@ -1,14 +1,38 @@
 # 🐳 Docker MongoDB User Registration
 
-A simple user registration application built using **Node.js, Express.js, MongoDB, and Docker**.
+A simple user registration application built using Node.js, Express.js, MongoDB, and Docker.
 
-## 📌 About
+## 📌 About the Project
 
-This project demonstrates how a registration form communicates with a backend server and stores user data in a MongoDB database. It also shows how Docker can be used to run and manage the application environment.
+This project demonstrates how a registration form sends user information from the frontend to the backend and stores it in MongoDB.
 
-## 🔄 Workflow
+When a user fills in the registration form and clicks Create Account, the data is sent to the Express.js backend. The backend stores the submitted information in MongoDB.
 
-Registration Form → Node.js + Express.js → MongoDB → Data Stored
+The stored data can then be retrieved using the /getUsers API and displayed in the terminal or browser.
+
+## 🔄 How It Works
+
+User fills the registration form
+        ↓
+Form sends data to the backend
+        ↓
+Node.js + Express.js receives the data
+        ↓
+Data is stored in MongoDB
+        ↓
+/getUsers API retrieves the data
+        ↓
+Data is displayed in the terminal
+
+## ✨ What This Project Can Do
+
+- Allows users to submit a registration form
+- Sends form data to the backend
+- Stores submitted user data in MongoDB
+- Retrieves stored users using an API
+- Displays stored data in the terminal
+- Runs the application using Docker
+- Demonstrates frontend, backend, database, and Docker integration
 
 ## 🛠️ Technologies Used
 
@@ -21,49 +45,56 @@ Registration Form → Node.js + Express.js → MongoDB → Data Stored
 - Docker
 - Docker Compose
 
-## ✨ Features
-
-- User registration form
-- Backend using Express.js
-- MongoDB database integration
-- Store and retrieve user data
-- REST API endpoint
-- Docker containerization
-- Local development using localhost
-
 ## 📡 API
 
-### Get Users
+GET /getUsers
 
-`GET /getUsers`
+This API retrieves the user data stored in MongoDB.
 
-### 🧪 Test API
+## 💻 Display Data in Terminal
 
-Run the following command in the terminal:
+After starting the application, open PowerShell or Command Prompt and run:
 
-`curl.exe http://localhost:5050/getUsers`
+curl.exe http://localhost:5050/getUsers
 
-You can also open the API in your browser:
+This will display the user data retrieved from MongoDB directly in the terminal.
 
-`http://localhost:5050/getUsers`
+Example:
+
+curl.exe http://localhost:5050/getUsers
+
+The terminal will show something similar to:
+
+[{"username":"John","email":"john@gmail.com"}]
+
+The terminal is only displaying the data. The actual data is stored in MongoDB.
+
+## 🌐 Display Data in Browser
+
+You can also open:
+
+http://localhost:5050/getUsers
+
+This will display the stored user data in the browser.
 
 ## 🐳 Run with Docker
 
-Start the application using:
+Run:
 
-`docker compose up --build`
+docker compose up --build
 
-Then open the application:
+Then open:
 
-`http://localhost:5050`
+http://localhost:5050
 
 ## 📚 What I Learned
 
-- How frontend and backend communicate
-- How to create APIs using Express.js
-- How to connect Node.js with MongoDB
-- How to store and retrieve data from MongoDB
-- Basics of Docker and Docker Compose
-- Testing APIs using the terminal
-- Using Git and GitHub for project management
-
+- How frontend forms send data to a backend
+- How Node.js and Express.js handle requests
+- How to connect a backend with MongoDB
+- How to insert and retrieve data from MongoDB
+- How APIs work
+- How to display API data in the terminal
+- How to use Docker and Docker Compose
+- How to test an API using the terminal
+- How to use Git and GitHub
