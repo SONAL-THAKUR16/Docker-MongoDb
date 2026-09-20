@@ -15,9 +15,9 @@ The backend processes the data and stores it in **MongoDB**.
 The stored data can then be retrieved using the `/getUsers` API and displayed in the browser or directly in the terminal.
 
 ### 🔄 Project Flow
-
+```bash
 **Registration Form → Express.js → MongoDB → `/getUsers` API → Terminal / Browser**
-
+```
 ---
 
 ## ✨ Features
