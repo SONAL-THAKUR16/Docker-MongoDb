@@ -50,23 +50,10 @@ The stored data can then be retrieved using the `/getUsers` API and displayed in
 
 | Purpose | Link / Command |
 |---|---|
-| 🌐 Open Application | 
-```bash
-http://localhost:5050` |
-```
-| 📊 View Users API | 
-```bash 
-http://localhost:5050/getUsers|
-```
-| 💻 Display Users in Terminal |
-```bash
-curl.exe http://localhost:5050/getUsers
-```
-| 🐳 Start with Docker | 
-```bash
-`docker compose up --build` 
-```
-
+| 🌐 Open Application | `http://localhost:5050` |
+| 📊 View Users API | `http://localhost:5050/getUsers` |
+| 💻 Display Users in Terminal | `curl.exe http://localhost:5050/getUsers` |
+| 🐳 Start with Docker | `docker compose up --build` |
 ---
 
 ## 💻 View Data in Terminal
