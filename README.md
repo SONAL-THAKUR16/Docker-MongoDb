@@ -80,6 +80,25 @@ Then open:
 `http://localhost:5050`
 
 ---
+## 🧪 Example
+
+Suppose a user enters:
+
+**Username:** John  
+**Email:** john@gmail.com
+
+After clicking **Create Account**, the data is stored in MongoDB.
+
+To view the stored data in the terminal, run:
+
+`curl.exe http://localhost:5050/getUsers`
+
+Example output:
+
+`[{"username":"John","email":"john@gmail.com"}]`
+
+This shows how the data submitted through the registration form is stored in MongoDB and retrieved using the `/getUsers` API.
+
 
 ## 📚 What I Learned
 
