@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5050:5050"
+    environment:
+      MONGO_URL: mongodb://admin:qwerty@mongo:27017
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: qwerty
+    ports:
+      - "27017:27017"
