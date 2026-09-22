@@ -86,7 +86,7 @@ docker compose up --build
 
 Then open:
 ```bash
-`http://localhost:5050
+http://localhost:5050
 ```
 
 ---
